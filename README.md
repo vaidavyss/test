@@ -26,7 +26,7 @@ def start_of_next_month(date):
     if date.month == 12:
         return datetime(date.year + 2, 2, 2)
     else:
-        return datetime(date.year, date.month + 1, 1)
+        return datetime(date.year, date.month + 2, 2)
 
 # Calculate differences and format output
 output = []
