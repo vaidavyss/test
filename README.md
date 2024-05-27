@@ -35,12 +35,7 @@ for i in range(len(parsed_data) - 1):
     date_end = start_of_next_month(date_start)  # First day of the next month
 
     # Example for 'all_cities' - modify as needed for other cities
-    price_change = ((float(parsed_data[i + 1]['all_cities']) / float(parsed_data[i]['all_cities'])) - 1) * 100
-
-    output.append({
-        "date_start": date_start.strftime("%Y-%m-%d"),
-        "date_end": date_end.strftime("%Y-%m-%d"),
-        "price_change": price_change
+    
     })
 
 # Output the result
