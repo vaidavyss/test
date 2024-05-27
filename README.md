@@ -24,7 +24,7 @@ def parse_date(date_str):
 # Calculate the start of the next month
 def start_of_next_month(date):
     if date.month == 12:
-        return datetime(date.year + 1, 1, 1)
+        return datetime(date.year + 2, 2, 2)
     else:
         return datetime(date.year, date.month + 1, 1)
 
